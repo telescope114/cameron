@@ -17,12 +17,15 @@ module.exports = {
         'tabs-active': '#EDEDED',
         'user-info-main': '#D9D9D9',
         'list-item': '#202020',
-        'user-info-others': '#828282'
+        'user-info-others': '#828282',
+        'ghost': '#6F6F6F'
       },
       borderColor: {
         tabs: '#282828',
         'user-info-main': '#D9D9D9',
-        'user-info-others': '#828282'
+        'user-info-others': '#828282',
+        '5C5C5C': '#5C5C5C',
+        'ghost': '#6F6F6F'
       },
       textColor: {
         'default': '#EDEDED',
@@ -32,14 +35,16 @@ module.exports = {
         'tabs-active': '#EDEDED',
         'user-info-main': '#D9D9D9',
         'user-info-others': '#828282',
-        'user-level-title': '#7D7D7D'
+        'user-level-title': '#7D7D7D',
+        'ghost': '#6F6F6F'
       },
       borderRadius: {
         'card': '20px'
       },
       width: {
         'line-progress': '275px',
-        '37.5': '150px'
+        '37.5': '150px',
+        '105px': '105px'
       },
       height: {
         'line-progress': '12px',
@@ -50,10 +55,18 @@ module.exports = {
         '80': '80px',
         '11px': '11px',
         '11.5': '46px',
-        '7.5': '30px'
+        '7.5': '30px',
+        '6.5': '26px',
+        '17': '68px',
+        '13.5': '54px',
+        '47px': '47px'
       },
       padding: {
         '7.5': '30px'
+      },
+      borderWidth: {
+        '0.5px': '0.5px',
+        '1px': '1px'
       },
       spacing: {
         '11.5': '46px'
@@ -63,7 +76,8 @@ module.exports = {
       },
       lineHeight: {
         'button': '15.4px',
-        '13': '52px'
+        '13': '52px',
+        '14px': '14px'
       },
       fontFamily: {
         'button-font': ['NEXT Book']

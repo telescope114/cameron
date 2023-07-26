@@ -34,7 +34,7 @@ const List: React.FC<props> = ({ className, config }) => {
             <LineProgress value={ item.progressVal } className={'ml-14 my-5'} />
             <div className={'ml-3 leading-13 font-button-font text-white'}>{ item.progressLabel }</div>
           </div>
-          <Button disabled={item.disabled} className={'h-10 my-1.5'} type={item.buttonType}>{ item.buttonText }</Button>
+          <Button disabled={item.disabled} className={'h-10 my-1.5 mr-1.5'} type={item.buttonType}>{ item.buttonText }</Button>
         </div>)
       })
     }

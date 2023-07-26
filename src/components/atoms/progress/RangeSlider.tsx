@@ -21,10 +21,10 @@ const RangeSlider: React.FC<CircularProgressBarProps> = ({
      margin = 1,
      children,
    }) => {
-  const percentageCheck = percentage > 100 ? 100 : percentage
+  const percentageCheck = percentage > 1 ? 1 : percentage
   const normalizedRadius = radius - strokeWidth / 2
   const circumference = normalizedRadius * 2 * Math.PI
-  const strokeDashoffset = ((125 - percentageCheck) / 100) * circumference
+  const strokeDashoffset = ((125 - percentageCheck)) * circumference
   
   const containerSize = radius * 2 + margin * 2
   const containerStyle = {
