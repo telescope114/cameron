@@ -13,7 +13,7 @@ const Tabs: React.FC<props> = ({ value, config, onChange }) => {
         onClick={() => onChange(item.value)}
         className={`font-button-font cursor-pointer pt-0.5 inline-block leading-button ${index === 0 ? '' : 'ml-10'} ${ item.value === value ? 'text-tabs-active' : 'text-tabs' }`}
       >
-        { item.title }
+        { item.value === value ? `</ ${item.title} >` : item.title }
         <div className={`h-0.5 mt-11px rounded-sm ${ item.value === value ? 'bg-tabs-active' : '' }`}></div>
       </div>)
     })

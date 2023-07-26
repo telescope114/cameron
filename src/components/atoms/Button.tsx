@@ -10,9 +10,9 @@ export type props = {
 
 const getClasses = ({ disabled, type, className }: props): string => {
   let out = 'px-6 py-3 rounded-md font-button-font text-button leading-button font-normal '
-  if (disabled) out += 'bg-disabled text-disabled cursor-not-allowed'
-  else if (type === 'primary') out += 'bg-primary text-primary cursor-pointer'
-  else out += 'bg-button-default text-default cursor-pointer'
+  if (disabled) out += 'bg-disabled text-disabled cursor-not-allowed '
+  else if (type === 'primary') out += 'bg-primary text-primary cursor-pointer '
+  else out += 'bg-button-default text-default cursor-pointer '
   return out + className
 }
 

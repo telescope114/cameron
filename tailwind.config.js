@@ -16,6 +16,7 @@ module.exports = {
         'line-progress-null': '#505050',
         'tabs-active': '#EDEDED',
         'user-info-main': '#D9D9D9',
+        'list-item': '#202020',
         'user-info-others': '#828282'
       },
       borderColor: {
@@ -37,10 +38,13 @@ module.exports = {
         'card': '20px'
       },
       width: {
-        'line-progress': '275px'
+        'line-progress': '275px',
+        '37.5': '150px'
       },
       height: {
-        'line-progress': '12px'
+        'line-progress': '12px',
+        '13': '52px',
+        '45': '180px'
       },
       margin: {
         '80': '80px',
@@ -58,7 +62,8 @@ module.exports = {
         'button': '14px'
       },
       lineHeight: {
-        'button': '15.4px'
+        'button': '15.4px',
+        '13': '52px'
       },
       fontFamily: {
         'button-font': ['NEXT Book']

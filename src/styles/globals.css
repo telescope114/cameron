@@ -27,3 +27,43 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+::-webkit-scrollbar {
+
+  width:6px;
+
+}
+
+/* 滚动槽 */
+
+::-webkit-scrollbar-track {
+
+  -webkit-box-shadow: rgba(0,0,0,0.3);
+
+  border-radius:6px;
+
+}
+
+/* 滚动条滑块 */
+
+::-webkit-scrollbar-thumb {
+
+  border-radius:6px;
+
+  background: #E6E6E6;
+
+  -webkit-box-shadow: rgba(0,0,0,0.5);
+
+}
+
+::-webkit-scrollbar-thumb:window-inactive {
+
+  background: transparent;
+
+}
+/*外层轨道*/
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
