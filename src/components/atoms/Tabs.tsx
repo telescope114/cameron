@@ -1,6 +1,6 @@
 import React, { useMemo } from 'react'
 
-type props = {
+export type props = {
   value: string,
   config: Array<{ value: string, title: string }>,
   onChange?: any
@@ -17,7 +17,7 @@ const Tabs: React.FC<props> = ({ value, config, onChange }) => {
         <div className={`h-0.5 mt-11px rounded-sm ${ item.value === value ? 'bg-tabs-active' : '' }`}></div>
       </div>)
     })
-  }, [config, value])
+  }, [config, onChange, value])
   return (
     <div className={`flex border-b border-tabs`}>
       { tab }

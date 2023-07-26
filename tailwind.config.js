@@ -14,20 +14,27 @@ module.exports = {
         'disabled': 'rgba(255, 255, 255, 0.2)',
         'line-progress': '#F2F2F2',
         'line-progress-null': '#505050',
-        'tabs-active': '#EDEDED'
-      },
-      borderRadius: {
-        'card': '20px'
+        'tabs-active': '#EDEDED',
+        'user-info-main': '#D9D9D9',
+        'user-info-others': '#828282'
       },
       borderColor: {
-        tabs: '#282828'
+        tabs: '#282828',
+        'user-info-main': '#D9D9D9',
+        'user-info-others': '#828282'
       },
       textColor: {
         'default': '#EDEDED',
         'primary': '#030303',
         'disabled': '#000000',
         'tabs': '#B2B2B2',
-        'tabs-active': '#EDEDED'
+        'tabs-active': '#EDEDED',
+        'user-info-main': '#D9D9D9',
+        'user-info-others': '#828282',
+        'user-level-title': '#7D7D7D'
+      },
+      borderRadius: {
+        'card': '20px'
       },
       width: {
         'line-progress': '275px'
@@ -37,7 +44,15 @@ module.exports = {
       },
       margin: {
         '80': '80px',
-        '11px': '11px'
+        '11px': '11px',
+        '11.5': '46px',
+        '7.5': '30px'
+      },
+      padding: {
+        '7.5': '30px'
+      },
+      spacing: {
+        '11.5': '46px'
       },
       fontSize: {
         'button': '14px'
