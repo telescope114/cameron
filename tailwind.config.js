@@ -13,15 +13,21 @@ module.exports = {
         'primary': '#FFFFFF',
         'disabled': 'rgba(255, 255, 255, 0.2)',
         'line-progress': '#F2F2F2',
-        'line-progress-null': '#505050'
+        'line-progress-null': '#505050',
+        'tabs-active': '#EDEDED'
       },
       borderRadius: {
         'card': '20px'
       },
+      borderColor: {
+        tabs: '#282828'
+      },
       textColor: {
         'default': '#EDEDED',
         'primary': '#030303',
-        'disabled': '#000000'
+        'disabled': '#000000',
+        'tabs': '#B2B2B2',
+        'tabs-active': '#EDEDED'
       },
       width: {
         'line-progress': '275px'
@@ -30,7 +36,8 @@ module.exports = {
         'line-progress': '12px'
       },
       margin: {
-        '80': '80px'
+        '80': '80px',
+        '11px': '11px'
       },
       fontSize: {
         'button': '14px'
