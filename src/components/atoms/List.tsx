@@ -43,10 +43,12 @@ const List: React.FC<props> = ({ className, config }) => {
     })
   }, [config])
   
-  const ref = useRef(null)
+  const ref = useRef<HTMLDivElement | null>(null)
   const [isBottom, setIsBottom] = useState<boolean>(false)
   const listScroll = () => {
-    setIsBottom(ref.current.scrollHeight - (ref.current.scrollTop || 0) <= ref.current.clientHeight + 26)
+    if (ref.current) {
+      setIsBottom(ref.current.scrollHeight - (ref.current.scrollTop || 0) <= ref.current.clientHeight + 26)
+    }
   }
   return (<div className={'font-button-font w-full relative ' + (className || '')}>
     <div className="w-full h-full overflow-auto" ref={ref} onScroll={listScroll}>
