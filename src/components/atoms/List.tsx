@@ -1,4 +1,4 @@
-import React, { useMemo } from 'react'
+import React, { useMemo, useRef, useState } from 'react'
 import iconSVG from '@/images/icon.svg'
 import Image from 'next/image'
 import LineProgress from "@/components/atoms/progress/LineProgress";
@@ -42,8 +42,17 @@ const List: React.FC<props> = ({ className, config }) => {
       return (<div key={ key }>{ getItem(value, index) }</div>)
     })
   }, [config])
-  return (<div className={'font-button-font w-full overflow-auto ' + (className || '')}>
-    { listItem }
+  
+  const ref = useRef(null)
+  const [isBottom, setIsBottom] = useState<boolean>(false)
+  const listScroll = () => {
+    setIsBottom(ref.current.scrollHeight - (ref.current.scrollTop || 0) <= ref.current.clientHeight + 26)
+  }
+  return (<div className={'font-button-font w-full relative ' + (className || '')}>
+    <div className="w-full h-full overflow-auto" ref={ref} onScroll={listScroll}>
+      { listItem }
+    </div>
+    { (!isBottom) && <div className={ 'absolute bottom-0 bg-list h-7.5 w-full' }></div> }
   </div>)
 }
 

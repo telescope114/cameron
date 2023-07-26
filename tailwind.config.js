@@ -49,6 +49,7 @@ module.exports = {
       height: {
         'line-progress': '12px',
         '13': '52px',
+        '7.5': '30px',
         '45': '180px'
       },
       margin: {
@@ -84,6 +85,7 @@ module.exports = {
       },
       backgroundImage: {
         'button-default': 'linear-gradient(180deg, #353535 0%, #2E2E2E 100%)',
+        'list': 'linear-gradient(180deg, rgba(16, 16, 16, 0) 0%, #101010 100%)',
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
           'conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))',

@@ -10,18 +10,18 @@ export type props = {
   ghost?: boolean
 }
 
-const getClasses = ({ disabled, type, className, ghost }: props): string => {
-  let out = 'px-6 py-3 rounded-md font-button-font text-button leading-button font-normal '
-  if (disabled) out += 'bg-disabled text-disabled cursor-not-allowed '
-  else if (type === 'primary') out += 'bg-primary text-primary cursor-pointer '
-  else if (type === 'default') out += 'bg-button-default text-default cursor-pointer '
+const getClasses = ({ disabled, type, ghost }: props): string => {
+  let out = 'py-3 rounded-md font-button-font text-button leading-button font-normal '
+  if (disabled) out += 'px-6 bg-disabled text-disabled cursor-not-allowed '
+  else if (type === 'primary') out += 'px-6 bg-primary text-primary cursor-pointer '
+  else if (type === 'default') out += 'px-6 bg-button-default text-default cursor-pointer '
   else if (ghost) out += 'bg-transparent text-ghost border-1px border-ghost cursor-pointer rounded-xl '
-  else out += 'bg-button-default text-default cursor-pointer '
-  return out + className
+  else out += 'px-6 bg-button-default text-default cursor-pointer '
+  return out
 }
 
 const Button: React.FC<props> = (props) => {
-  return (<button onClick={props.onClick} className={(props.widthFull ? 'w-full ' : '') + getClasses(props)} disabled={props.disabled}>
+  return (<button onClick={props.onClick} className={(props.widthFull ? 'w-full ' : '') + getClasses(props) + props.className} disabled={props.disabled}>
     { props.children }
   </button>)
 }

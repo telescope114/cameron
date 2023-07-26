@@ -2,9 +2,9 @@ import { props as tabsProps } from '../atoms/Tabs'
 import { props as listProps } from '../atoms/List'
 
 export const tabsConfig: tabsProps['config'] = [
-  { title: 'Course Completion', value: '1' },
-  { title: 'Quest Winning Streak', value: '2' },
-  { title: 'Track Completion', value: '3' }
+  { title: 'Course Completion', value: 'courseCompletion' },
+  { title: 'Quest Winning Streak', value: 'questWinningStreak' },
+  { title: 'Track Completion', value: 'trackCompletion' }
 ]
 
 export const listConfig: listProps['config'] = {
